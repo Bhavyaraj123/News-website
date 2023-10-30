@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <nav>
+        
+        <div class="main-nav container flex">
+            <a href="index.html">
+                <img src="/news.jpeg" alt="news website">
+            </a>
+        
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="links" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+                <li class="links" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+                <li class="links" id="politics" onclick="onNavItemClick('politics')">politics</li>
+             </ul>
+        </div>
+        <div class="search-bar flex">
+        <input type="search" placeholder="Search news  " class="In-type" id="search-text">
+            <button class="search-button" id="search-button">search</button>
+        </div>
+        <div class="toggle-button">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+    <div class="dropdown_menu   ">
+      <ul>
+      <li class="links" id="cricket" onclick="onNavItemClick('cricket')">Cricket</li>
+      <li class="links" id="Finance" onclick="onNavItemClick('Finance')">Finance</li>
+      <li class="links" id="politics" onclick="onNavItemClick('politics')">politics</li>
+       <li> <input type="search" placeholder="Search news"  id="search-text"></li>
+    <li>  <button class="search-button" id="search-button">search</button></li>
+    </ul>
+    </div>
+    
+</nav>
+    
+
+    <main>
+      <div class="card-container container flex" id="card-container">
+        
+      </div>
+    </main>  
+    <template id="template-news-card">
+      <div class="card">
+
+        <div class="card-head">
+          <img src="https://via.placeholder.com/400x200" alt="news-pictures" id="news-img">
+        </div>
+
+        <div class="card-content">
+          <h3 id="news-title">This is title</h3>
+          <h6 class="news-soure" id="news-soure">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe veniam, sequi optio commodi ex veritatis architecto consequatur recusandae voluptatibus sapiente?    </p>
+        </div>
+
+
+      </div>
+    </template> 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
